@@ -8,11 +8,11 @@ class MyProgram(client: RedisClientZIO) {
 
   def run(): TaskS[Unit] = {
     for {
-      _ <- client.set("name", "Diana")
+      _     <- client.set("name", "Diana")
       mName <- client.get("name")
       _ <- mName match {
         case Some(name) => putString(name)
-        case _ => Task.succeed(())
+        case _          => Task.succeed(())
       }
     } yield ()
   }

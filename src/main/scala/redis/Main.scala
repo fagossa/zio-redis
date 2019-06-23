@@ -2,7 +2,7 @@ package redis
 
 import redis.client.RedisClientZIO
 import redis.service.MyProgram
-import scalaz.zio.{DefaultRuntime, Task}
+import scalaz.zio.DefaultRuntime
 
 import scala.concurrent.Await
 
