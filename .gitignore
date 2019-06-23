@@ -1,0 +1,4 @@
+project/target/
+dev/.docker-data/
+.idea/
+target/
